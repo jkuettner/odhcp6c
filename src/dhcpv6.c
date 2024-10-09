@@ -1149,7 +1149,7 @@ static int dhcpv6_handle_reply(enum dhcpv6_msg orig, _unused const int rc,
 						code = ((int)sdata[0]) << 8 | ((int)sdata[1]);
 
 						if (code == DHCPV6_Success)
-						    dhcpv6_successful_once = true;
+							dhcpv6_successful_once = true;
 							continue;
 
 						dhcpv6_handle_ia_status_code(orig, ia_hdr,
